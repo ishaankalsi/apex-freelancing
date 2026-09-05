@@ -1,5 +1,3 @@
-import Brand from './Brand'
-
 const services = [
   { number: '01', title: 'Web & Product', description: 'Fast, thoughtful digital experiences built to turn attention into action.', tags: ['Websites', 'UX/UI', 'Development'] },
   { number: '02', title: 'Brand & Creative', description: 'Distinctive identities and content that make your business impossible to overlook.', tags: ['Branding', 'Design', 'Content'] },
@@ -18,7 +16,7 @@ function App() {
   return (
     <div className="site-shell">
       <header className="site-header">
-        <Brand />
+        <a className="brand" href="#top" aria-label="Apex Freelancing home"><span className="brand-mark" aria-hidden="true">A</span><span>APEX <strong>FREELANCING</strong></span></a>
         <nav aria-label="Main navigation"><a href="#services">Services</a><a href="#automation">AI & Automation</a><a href="#why-apex">Why Apex</a></nav>
         <a className="button button-small" href="mailto:hello@apexfreelancing.com">Start a project <ArrowIcon /></a>
       </header>
@@ -59,7 +57,7 @@ function App() {
         <section className="final-cta" aria-labelledby="cta-title"><p className="kicker kicker-light">Have something important to solve?</p><h2 id="cta-title">Let's build what's <em>next.</em></h2><a className="cta-link" href="mailto:hello@apexfreelancing.com">Tell us about your project <ArrowIcon /></a></section>
       </main>
 
-      <footer><Brand /><p>Independent expertise for ambitious businesses.</p><a href="mailto:hello@apexfreelancing.com">hello@apexfreelancing.com</a><p className="copyright">© {new Date().getFullYear()} Apex Freelancing</p></footer>
+      <footer><a className="brand brand-footer" href="#top"><span className="brand-mark" aria-hidden="true">A</span><span>APEX <strong>FREELANCING</strong></span></a><p>Independent expertise for ambitious businesses.</p><a href="mailto:hello@apexfreelancing.com">hello@apexfreelancing.com</a><p className="copyright">© {new Date().getFullYear()} Apex Freelancing</p></footer>
     </div>
   )
 }
